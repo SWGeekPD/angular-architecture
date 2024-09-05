@@ -1,0 +1,31 @@
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/">{{ 'home.title' | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="/about">{{ 'about.title' | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="/contact">{{ 'contact.title' | translate }}</a>
+      </li>
+    </ul>
+  </nav>
+  <div style="display: flex; align-items: center">
+    <!-- Dropdown for Language Selection -->
+    <select #selectElement (change)="changeLanguage(selectElement.value)">
+      <option value="en">English</option>
+      <option value="ja">Japanese</option>
+    </select>
+
+    <!-- Profile Icon -->
+    <div style="margin-left: 15px">
+      <img
+        src="../../../../assets/images/default-user.svg"
+        alt="Profile"
+        style="height: 40px; width: 40px; border-radius: 50%"
+      />
+    </div>
+  </div>
+</header>

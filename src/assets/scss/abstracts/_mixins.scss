@@ -1,0 +1,25 @@
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$medium-desktop-width: 1093px;
+$large-desktop-widthe: 1706px;
+
+@mixin button {
+  border-radius: 4px;
+  height: 42px;
+}
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+@mixin medium_desktop {
+  @media (min-width: #{$medium-desktop-width}) and (max-width: #{$large-desktop-width}) {
+    @content;
+  }
+}

@@ -1,0 +1,20 @@
+/* SHARED STYLES BARREL
+ *
+ * This file rolls up a minimized list of variables & functions required for component styling.
+ */
+@charset 'utf-8';
+
+//Vendor
+@import 'vendors/__vendors-dir';
+
+//Abstract
+@import 'abstracts/__abstracts-dir';
+
+//Base Styles
+@import 'base/__base-dir';
+
+//Root-components
+@import 'root-components/__root-components-dir';
+
+//Layout
+@import 'layouts/__layouts-dir';

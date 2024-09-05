@@ -1,0 +1,34 @@
+.reorder-icon {
+  margin-top: -10px;
+  font-size: 26px;
+  &.active {
+    color: $active_menu_clr;
+  }
+}
+.sidenav_btn {
+  .mat-icon-button {
+    margin-top: -9px;
+    z-index: 9;
+    position: fixed;
+    margin-left: 10px;
+    .mat-icon {
+      visibility: hidden;
+    }
+  }
+  .mat-button-base {
+    background: $button_bg;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    min-width: auto;
+    padding: 0;
+    line-height: normal;
+    margin-right: 20px;
+    &.list_btn {
+      background: transparent;
+    }
+    &:first-child {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "home.title": "Home",
+  "home.description": "Welcome to Book Store!",
+  "about.title": "About",
+  "about.description": "This website is all about...",
+  "contact.title": "Contact",
+  "contact.description": "This website Contact...",
+  "delete": "Delete",
+  "edit": "Edit",
+  "create_book": "Create Book",
+  "update_book": "Update Book",
+  "cancel": "Cancel",
+  "id": "ID",
+  "name": "Name",
+  "action": " Action"
+}

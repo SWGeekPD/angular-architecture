@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+  background: $body_bg;
+}
+body,
+.mat-typography {
+  margin: 0;
+  font-family: $font-family-regular;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+.main_menu {
+  position: fixed;
+}
+.header {
+  width: 100%;
+  height: 53px;
+  .mat-button-base {
+    font: 14px/29px $font-family-regular;
+    letter-spacing: 0;
+    color: $menu_txt_color;
+    padding: 0 10px;
+    .mat-icon {
+      font-size: 16px;
+      padding-top: 3px;
+    }
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+.mat-menu-below {
+  .mat-menu-item {
+    font: 13px/35px $font-family-regular;
+    letter-spacing: 0;
+    color: $black_color;
+    height: auto;
+    padding: 0 14px;
+  }
+}
+.mat-form-field {
+  .mat-input-element {
+    font: 13px/16px $font-family-regular;
+    color: $text_color;
+  }
+}
+
+.user-dropdown.mat-button {
+  height: 29px;
+  width: 29px;
+  padding: 0;
+  min-width: auto;
+}
+
+.language_dialog {
+  width: 722px;
+}
+.cdk-overlay-pane {
+  .mat-dialog-container {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    .mat-dialog-content {
+      margin: 0 30px;
+      padding: 0;
+      max-height: 100%;
+      .mat-selection-list {
+        .mat-list-item {
+          &.mat-list-single-selected-option,
+          &:focus {
+            background: $card_bg;
+            border: 1px solid $button_bg;
+            color: $button_bg;
+            border-radius: 4px;
+          }
+          &:hover {
+            background: transparent;
+          }
+          .mat-list-text {
+            font: 13px/16px $font-family-regular;
+            letter-spacing: 0;
+            color: $menu_txt_color;
+            padding: 0;
+          }
+        }
+      }
+    }
+    .mat-dialog-actions {
+      justify-content: flex-end;
+      border-top: 1px solid $border_bg;
+      margin-bottom: 0;
+      padding: 4px 32px 12px;
+      .mat-button {
+        background-color: $button_bg;
+        color: white;
+        min-width: 70px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        top: 5px;
+        font: 13px/16px $font-family-regular;
+        text-transform: uppercase;
+        &.close_btn {
+          background: transparent;
+          border: 1px solid $button_bg;
+          color: $button_bg;
+        }
+      }
+    }
+
+    .material-icons.close {
+      position: absolute;
+      top: 7px;
+      right: 8px;
+      cursor: pointer;
+    }
+    .mat-dialog-title {
+      font: 18px/22px $font-family-medium;
+      color: $menu_txt_color;
+      border-bottom: 1px solid $border_bg;
+      padding: 14px 21px 12px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "home.title": "家",
+  "home.description": "ブックストアへようこそ！",
+  "about.title": "について",
+  "about.description": "このウェブサイトの目的は…",
+  "contact.title": "接触",
+  "contact.description": "このウェブサイトのお問い合わせ...",
+  "delete": "消去",
+  "edit": "編集",
+  "create_book": "ブックを作成する",
+  "update_book": "ブックの更新",
+  "cancel": "キャンセル",
+  "id": "ID",
+  "name": "名前",
+  "action": " アクション"
+}

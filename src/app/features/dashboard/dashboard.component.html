@@ -1,0 +1,37 @@
+<!-- dashboard.component.html -->
+<h1>{{ 'home.title' | translate }}</h1>
+<p>{{ 'home.description' | translate }}</p>
+
+<ng-container *ngIf="{ books: books$ | async, isLoading: isLoading$ | async } as data">
+  <div class="header">
+    <input #inputElement [(ngModel)]="selectedBook.name" />
+    <button (click)="onCreateBook(inputElement.value)">
+      {{ (isNewBook ? 'create_book' : 'update_book') | translate }}
+    </button>
+    <button *ngIf="!isNewBook" (click)="onCancelEdit()">{{ 'cancel' | translate }}</button>
+  </div>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>{{ 'id' | translate }}</th>
+          <th>{{ 'name' | translate }}</th>
+          <th>{{ 'action' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of data.books">
+          <td>{{ book.id }}</td>
+          <td>{{ book.name }}</td>
+          <td>
+            <button (click)="onDeleteBook(book)">{{ 'delete' | translate }}</button>
+            <button (click)="onEditBook(book)">{{ 'edit' | translate }}</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="action-button-container">
+      <button class="dynamic-route-button" (click)="goToNewFeature()">Go to Dynamic Route</button>
+    </div>
+  </div>
+</ng-container>
